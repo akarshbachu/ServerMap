@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     // for ActivityCompat#requestPermissions for more details.
                     return;
                 }
+                //3000 is for every 3 sec and 0 is distance parameter in meters if specified any num like 5 then for 5 meters change in position result is printed
                 locationManager.requestLocationUpdates("gps", 3000, 0, locationListener);
             }
         });
